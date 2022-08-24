@@ -1,0 +1,60 @@
+div {
+    width: 100%;
+    background: orange;
+    p {
+    font-size: 20px;
+    }
+    }
+$ancho: 720px;
+$alto: 500px;
+.box_1 {
+    width: $ancho * 1;
+    height: $alto * 1;
+    background: tomato;
+    margin: 10px;
+}
+.box_2 {
+    width: $ancho * 2;
+    height: $alto * 2;
+    background: tomato;
+    margin: 10px;
+}
+.box_3 {
+    width: $ancho * 2;
+    height: $alto * 2;
+    background: tomato;
+    margin: 10px;
+}
+
+@for $numero from 1 through 10 {
+    .box_#{$numero} {
+        @include tamaños([$alto * $numero] , [$ancho * $numero]);
+        @if $numero == 1 {
+            background: tomato;
+        }
+        @else if $numero == 2 {
+            background: yellowgreen;
+        }
+        @else {
+            background:pink;
+        }
+    }
+    
+}
+$colores:  (cvJuan: #55acee; cvRaul: #3a5795; cvPablo: #55acee);
+
+@each $nom-color, $bg-color in $colores {
+    .btn--#{nom-color}{
+        background-color: $bg-color;
+    }
+}
+
+@mixin tamaños ($altura,$anchura) {
+    height: $altura;
+    width: $anchura;
+}
+.perfo {
+    background-image:url(https://images.unsplash.com/photo-1516199423456-1f1e91b06f25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=849&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

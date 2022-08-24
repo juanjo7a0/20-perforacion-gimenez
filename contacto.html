@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
+    <style>
+        #entradaDatoTexto {
+            background-color:rosybrown;
+        }
+        section article h2 {
+            font-family: 'Josefin Slab';
+            color:black;
+            text-align: center;
+            margin-top: 75px;
+            border-style:solid;
+            border-color: black;
+        }
+        .fondodiv {
+            background-image:url(https://unsplash.com/es/fotos/GrmwVnVSSdU);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .perfo {
+            background-image:url(https://images.unsplash.com/photo-1516199423456-1f1e91b06f25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=849&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        ul {
+            color: white;
+        }
+        section article ul {
+            text-align:center;
+            font-style: italic;
+        }
+        section article label {
+            color:white;
+            text-align: center;
+        }
+        .noticia--destacada {
+            background-color: white;
+            height: 35px;
+        }
+        .noticia__titulo--uppercase {
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        section article a {
+            font-family:Arial, Helvetica, sans-serif;
+            color:white;
+        }
+        .cuadro-1 {
+      background-color: tomato; 
+      width: 20px; 
+      height: 10px;
+    }
+    .cuadro-2 {
+      background-color:purple; 
+      width: 20px; 
+      height: 10px
+    }
+    .cuadro-3 {
+      background-color: goldenrod;
+      width: 20px;
+      height: 10px;
+    }
+    @media(min-widt:921px) {
+      .cuadro-1 {
+        background-color: green;
+      }
+      .cuadro-2 {
+        background-color: blue;
+      }
+      .cuadro-3 {
+        background-color: aquamarine;
+      }
+    }
+    section article {
+        text-align: center;
+    }
+    .botones {
+        text-align:center;
+    }
+    .inicio {
+        text-align:left;
+    }
+    </style>
+</head>
+<body class="perfo">
+    <div class="cuadro-1"></div>
+    <div class="cuadro-2"></div>
+    <div class="cuadro-3"></div>
+    <section>
+        <article>
+            <div class="inicio">
+            <a href="index.html">Ir al inicio</a>
+            </div>
+        </article>
+    </section>    
+    <section>
+        <article class="noticia--destacada">                       
+    <h2 class="noticia__titulo--uppercase">CONTACTO</h2>            
+        </article>
+    </section>
+    <br>
+    <br>
+    <section>
+        <article>
+            <h4>
+        <ul>E-mail: serviciosgeologicoslaplata@geologia.com</ul>
+    <br>
+        <ul>Telefono: 5492214440000</ul>
+            </h4>
+        </article>
+    </section>
+    <br>
+    <br>
+    <form action""">
+        <section>
+            <article>        
+                    <label for="">Nombre</label>
+        <input type="text" id="entradaDatoTexto" placeholder="escriba aqui">
+        <br>
+        <br>
+                   <label for="">Consulta:</label>
+        <input type="text" id="entradaDatoTexto" placeholder="escriba aqui">
+        <br>
+        <br>
+                   <label for="">E-mail:</label>
+        <input type="text" id="entradaDatoTexto" placeholder="escriba aqui">
+            </article>
+        </section>        
+        <br>
+        <div class="botones">
+        <input type="submit" value="Enviar informacion">
+        <br>
+        <br>
+        <input type="reset" value="Limpiar formulario">
+        <br>
+        <br>
+        <input type="button" value="Sin acciones">
+       </div>
+    </form>
+    </body>
+</html>

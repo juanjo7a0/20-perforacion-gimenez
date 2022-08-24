@@ -1,0 +1,25 @@
+{
+  "name": "perforacion-gimenez",
+  "version": "1.0.0",
+  "description": "ejemplo son sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/profesionales.scss css/profesionales.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanjo7a0/01perforacion-gimenez.git"
+  },
+  "author": "juanjo7a0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juanjo7a0/01perforacion-gimenez/issues"
+  },
+  "homepage": "https://github.com/juanjo7a0/01perforacion-gimenez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

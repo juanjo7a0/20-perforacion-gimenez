@@ -1,0 +1,37 @@
+.perfo {
+    background-image: url(https://images.unsplash.com/photo-1516199423456-1f1e91b06f25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=849&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div p {
+    width: 100%;
+    background: orange;
+    font-size: 20px;
+}
+
+@for $numero form 1 to 10 {
+    .box_# {$numero} {
+    width: (ancho * $numero);
+    height: (alto * 1);
+    background: tomato;
+    margin: 10px;
+    }
+}
+
+$ancho: 700px;
+$alto: 500px;
+
+.box_1 {
+    width: (ancho * 1);
+    height: (alto * 1);
+    background: tomato;
+    margin: 10px;
+}
+.box_2 {
+    width: (ancho * 2);
+    height: (alto * 2);
+    margin: 10px;
+    background: tomato;
+    margin: 10px;
+}
+
